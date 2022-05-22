@@ -46,6 +46,17 @@ $(function () {
     });
 
 
+    //======TESTIMONIAL SLIDER====== 
+    $('.test_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="fad fa-arrow-alt-right nextArrow"></i>',
+        prevArrow: '<i class="fad fa-arrow-alt-left prevArrow"></i>',
+    });
 
 
 
