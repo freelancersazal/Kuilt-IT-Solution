@@ -77,7 +77,7 @@ $(function () {
     });
 
 
-
+    //==========TESTIMONIAL 2 SIDEBAR========= 
     $('.test_slider_2').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -103,6 +103,11 @@ $(function () {
 
     });
 
+
+    //==========STICKY SIDEBAR========= 
+    $("#sticky_sidebar").stickit({
+        top: 70,
+    })
 
 
 });
