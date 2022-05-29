@@ -46,7 +46,7 @@ img {
 input,
 textarea {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
     outline: none;
     resize: none;
     border: 1px solid #E4E7E9;
@@ -3105,18 +3105,507 @@ footer::after {
     -o-transform: scale(1.1);
 }
 
-
-
-
-
 /* =================================
     GALLERY END
 ================================= */
 
 
+/* =================================
+    FAQ START
+================================= */
 
 
 
+
+.wsus__faq_item {
+    background: #F7F7FA;
+    margin-top: 25px;
+}
+
+.wsus__faq_item .accordion-button {
+    color: var(--colorSecondary) !important;
+    background: none !important;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__faq_item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    background: none;
+    border: none;
+}
+
+.wsus__faq_item .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.wsus__faq_item .accordion-body p {
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.wsus__faq_item .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus.png);
+    transform: rotate(-180deg);
+}
+
+.wsus__faq_item .accordion-button::after {
+    background-image: url(../images/plus.png);
+}
+
+.wsus__faq_item .accordion-button:hover {
+    color: var(--colorPrimary) !important;
+}
+
+/* =================================
+    FAQ END
+================================= */
+
+
+
+/* =================================
+    404 START
+================================= */
+.wsus__404_text {}
+
+.wsus__404_text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.wsus__404_text p {
+    text-align: center;
+    font-weight: 400;
+    width: 80%;
+    margin: 25px 10%;
+}
+
+.wsus__404_text ul li a i {
+    margin-right: 10px;
+}
+
+.wsus__404_text ul li a.home_btn {
+    border-radius: 4px;
+    padding: 15px 40px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+    font-weight: 700;
+    border: 1px solid var(--colorPrimary);
+    margin-left: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__404_text ul li a.home_btn:hover {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+}
+
+/* =================================
+    404 END
+================================= */
+
+
+/* =================================
+    LOGIN START
+================================= */
+.wsus__login_area {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 14%) 0px 0px 50px;
+}
+
+.wsus__login_area .nav-item {
+    width: 50%;
+}
+
+.wsus__login_area #pills-tab {
+    padding-top: 30px;
+    position: relative;
+}
+
+.wsus__login_area #pills-tab::after {
+    position: absolute;
+    content: "";
+    background: #E4E7E9;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.wsus__login_area .nav-pills .nav-link {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 100%;
+    background: none !important;
+    color: #757474;
+    border-bottom: 3px solid transparent;
+}
+
+.wsus__login_area .nav-pills .nav-link.active,
+.wsus__login_area .nav-pills .nav-link:hover {
+    color: var(--colorSecondary);
+    border-color: var(--colorPrimary);
+    border-radius: 0;
+}
+
+.wsus__login_area form {
+    padding: 30px;
+}
+
+.wsus__login_area form label {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--colorSecondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wsus__login_area form label a {
+    color: var(--colorPrimary);
+}
+
+.wsus__login_area .wsus__single_input {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.wsus__login_area .wsus__single_input .eye {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--colorSecondary);
+}
+
+.wsus__login_area button {
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.wsus__login_area button i {
+    margin-left: 10px;
+}
+
+.wsus__login_area .or {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 25px 0px 20px 0px;
+}
+
+.wsus__login_area .or::after,
+.wsus__login_area .or::before {
+    position: absolute;
+    content: "";
+    background: #E4E7E9;
+    width: 45%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.wsus__login_area .or::before {
+    left: auto;
+    right: 0;
+}
+
+.others_login li a {
+    border: 1px solid #E4E7E9;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.others_login li a span {
+    width: 30px !important;
+    height: 30px !important;
+    overflow: hidden;
+    display: inline-block;
+    padding: 3px 2px;
+}
+
+.others_login li a p {
+    color: var(--colorSecondary);
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.others_login li a:hover p {
+    color: var(--colorPrimary);
+}
+
+/* =================================
+    LOGIN END
+================================= */
+
+
+
+/* =================================
+    FORGET PASSWORD START
+================================= */
+.wsus__forget_password {}
+
+.wsus__forget_password .wsus__login_area {
+    padding: 30px;
+}
+
+.wsus__forget_pass_header {
+    padding-bottom: 30px;
+}
+
+.wsus__forget_pass_header h3 {
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wsus__forget_pass_header p {
+    font-weight: 600;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wsus__forget_password .wsus__login_area form {
+    padding: 0;
+}
+
+.wsus__forget_password p {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.wsus__forget_password p a {
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+}
+
+.wsus__forget_password .wsus__login_area button {
+    margin-bottom: 20px;
+}
+
+.wsus__forget_pass_footer {
+    border-top: 1px solid #E4E7E9;
+    padding-top: 13px;
+    margin-top: 25px;
+}
+
+/* =================================
+    FORGET PASSWORD END
+================================= */
+
+
+/* =================================
+    PRICING START
+================================= */
+.wsus__pricing {}
+
+.wsus__single_pricing {
+    padding: 35px;
+    background: var(--colorSecondary);
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s ease;
+    -moz-transition: all linear .3s ease;
+    -ms-transition: all linear .3s ease;
+    -o-transition: all linear .3s ease;
+}
+
+.wsus__single_pricing h4 {
+    color: var(--colorWhite);
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.wsus__single_pricing h2 {
+    color: var(--colorWhite);
+    font-size: 48px;
+    font-weight: 700;
+    margin: 30px 0px 30px 0px;
+}
+
+.wsus__single_pricing h2 span {
+    color: var(--colorWhite);
+    font-size: 33px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.wsus__single_pricing ul li {
+    color: var(--colorWhite);
+    font-size: 18px;
+    padding-left: 25px;
+    position: relative;
+    margin-top: 20px;
+    font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s ease;
+    -moz-transition: all linear .3s ease;
+    -ms-transition: all linear .3s ease;
+    -o-transition: all linear .3s ease;
+}
+
+.wsus__single_pricing ul li::after {
+    content: "\f00c";
+    color: var(--colorWhite);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 13px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s ease;
+    -moz-transition: all linear .3s ease;
+    -ms-transition: all linear .3s ease;
+    -o-transition: all linear .3s ease;
+}
+
+.wsus__single_pricing ul li.delete {
+    color: var(--colorPrimary);
+}
+
+.wsus__single_pricing ul li.delete::after {
+    color: var(--colorPrimary);
+    content: "\f00d";
+}
+
+.wsus__single_pricing a {
+    background: var(--colorWhite);
+    border-radius: 4px;
+    padding: 14px 30px;
+    font-size: 16px;
+    color: var(--colorPrimary);
+    font-weight: 700;
+    margin-top: 40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s ease;
+    -moz-transition: all linear .3s ease;
+    -ms-transition: all linear .3s ease;
+    -o-transition: all linear .3s ease;
+}
+
+.wsus__single_pricing a:hover {
+    background: var(--colorSecondary) !important;
+    color: var(--colorWhite);
+}
+
+.wsus__single_pricing:hover {
+    background: var(--colorPrimary);
+    transform: scaleY(1.05);
+    -webkit-transform: scaleY(1.05);
+    -moz-transform: scaleY(1.05);
+    -ms-transform: scaleY(1.05);
+    -o-transform: scaleY(1.05);
+}
+
+
+.wsus__single_pricing:hover a {
+    background: var(--colorWhite);
+}
+
+.wsus__single_pricing:hover .delete,
+.wsus__single_pricing:hover .delete::after {
+    color: var(--colorSecondary);
+}
+
+
+/* =================================
+    PRICING END
+================================= */
+
+
+/* =================================
+    CAREER START
+================================= */
+.wsus__single_career {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgb(99 99 99 / 17%) 0px 0px 15px 0px;
+    margin-top: 25px;
+}
+
+.wsus__single_career h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--colorPrimary);
+}
+
+.wsus__single_career h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.wsus__single_career p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.wsus__single_career a {
+    margin-top: 20px;
+}
+
+/* =================================
+    CAREER END
+================================= */
+
+
+
+/* ==============================
+	CAREER DETAILS START
+============================== */
+
+/* ==============================
+	CAREER DETAILS END
+============================== */
 
 
 

@@ -88,10 +88,10 @@
             <div class="row">
                 <div class="col-xo-12">
                     <nav aria-label="breadcrumb">
-                        <h1>gallery</h1>
+                        <h1>Login/Registration</h1>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                            <li class="breadcrumb-item active" aria-current="page">Login/Registration</li>
                         </ul>
                     </nav>
                 </div>
@@ -104,88 +104,106 @@
 
 
     <!--=======================================
-        GALLERY START
+        LOGIN START
     ========================================-->
-    <section class="wsus__gallery mt_105 xs_mt_55 mb_130 xs_mb_80">
+    <section class="wsus__login mt_130 xs_mt_80">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_1.png">
-                        <img src="images/portfolio_1.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
+                <div class="col-xl-5 m-auto">
+                    <div class="wsus__login_area">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">sign in</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">sign up</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form>
+                                    <label>Email Address</label>
+                                    <div class="wsus__single_input">
+                                        <input type="text">
+                                    </div>
+                                    <label>Password <a href="forget_password.html">Forget Password</a></label>
+                                    <div class="wsus__single_input">
+                                        <input type="password">
+                                        <span class="eye"><i class="far fa-eye"></i></span>
+                                    </div>
+                                    <button type="submit" class="common_btn">sign in <i
+                                            class="far fa-long-arrow-right"></i></button>
+                                    <span class="or">or</span>
+                                    <ul class="others_login">
+                                        <li>
+                                            <a href="#">
+                                                <span><img src="images/google.png" alt="goole" class="img-fluid"></span>
+                                                <p>Login with Google</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span><img src="images/apple.png" alt="goole" class="img-fluid"></span>
+                                                <p>Login with Apple</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form>
+                                    <label>name</label>
+                                    <div class="wsus__single_input">
+                                        <input type="text">
+                                    </div>
+                                    <label>Email Address</label>
+                                    <div class="wsus__single_input">
+                                        <input email="text">
+                                    </div>
+                                    <label>Password</label>
+                                    <div class="wsus__single_input">
+                                        <input type="password">
+                                        <span class="eye"><i class="far fa-eye"></i></span>
+                                    </div>
+                                    <label> confirm Password</label>
+                                    <div class="wsus__single_input">
+                                        <input type="password">
+                                        <span class="eye"><i class="far fa-eye"></i></span>
+                                    </div>
+
+                                    <button type="submit" class="common_btn">sign up <i
+                                            class="far fa-long-arrow-right"></i></button>
+                                    <span class="or">or</span>
+                                    <ul class="others_login">
+                                        <li>
+                                            <a href="#">
+                                                <span><img src="images/google.png" alt="goole" class="img-fluid"></span>
+                                                <p>Login with Google</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span><img src="images/apple.png" alt="goole" class="img-fluid"></span>
+                                                <p>Login with Apple</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_2.png">
-                        <img src="images/portfolio_2.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_3.png">
-                        <img src="images/portfolio_3.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_4.png">
-                        <img src="images/portfolio_4.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_5.png">
-                        <img src="images/portfolio_5.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_6.png">
-                        <img src="images/portfolio_6.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_7.png">
-                        <img src="images/portfolio_7.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_8.png">
-                        <img src="images/portfolio_8.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4">
-                    <a class="venobox wsus__gallery_item" data-gall="gallery01" href="images/portfolio_9.png">
-                        <img src="images/portfolio_9.png" alt="gallery item" class="img-fluid w-100">
-                        <div class="gal_img_overlay">
-                            <span><i class="fas fa-search-plus"></i></span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--=======================================
-        GALLERY END
+        LOGIN END
     ========================================-->
 
 
