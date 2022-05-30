@@ -3,7 +3,7 @@ $(function () {
     "use strict";
 
 
-    //=========menu fix js=========   
+    //======menu fix js======   
     if ($('.main_menu').offset() != undefined) {
         var navoff = $('.main_menu').offset().top;
         $(window).scroll(function () {
@@ -18,15 +18,15 @@ $(function () {
     }
 
 
-    //=========counter.js=========   
+    //=====counter.js=====   
     $('.counter').countUp();
 
 
-    //========venobox.js========
+    //=====venobox.js=====
     $('.venobox').venobox();
 
 
-    //*==========isotop============== 
+    //*======isotop========= 
     var $grid = $('.grid').isotope({});
 
     $('.wsus__portfolio_filter').on('click', 'button', function () {
@@ -59,7 +59,7 @@ $(function () {
     });
 
 
-    //*==========SCROLL BUTTON==========  
+    //*=======SCROLL BUTTON=======  
     $('.wsus__scroll_btn').on('click', function () {
         $('html, body').animate({
             scrollTop: 0,
@@ -77,7 +77,7 @@ $(function () {
     });
 
 
-    //==========TESTIMONIAL 2 SIDEBAR========= 
+    //=======TESTIMONIAL 2 SIDEBAR====== 
     $('.test_slider_2').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -104,7 +104,7 @@ $(function () {
     });
 
 
-    //==========STICKY SIDEBAR========= 
+    //======STICKY SIDEBAR====== 
     $("#sticky_sidebar").stickit({
         top: 70,
     })

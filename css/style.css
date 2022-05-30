@@ -46,7 +46,7 @@ img {
 input,
 textarea {
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 20px;
     outline: none;
     resize: none;
     border: 1px solid #E4E7E9;
@@ -66,6 +66,13 @@ textarea::placeholder {
 
 button {
     border: none;
+}
+
+:root {
+    --colorPrimary: #F94D1D;
+    --colorSecondary: #161735;
+    --colorWhite: #ffffff;
+    --Mulish: 'Mulish', sans-serif;
 }
 
 /* ========COMMON CSS START========= */
@@ -104,15 +111,6 @@ button {
 }
 
 /* ========COMMON CSS END========== */
-
-
-:root {
-    --colorPrimary: #F94D1D;
-    --colorSecondary: #161735;
-    --colorWhite: #ffffff;
-    --Mulish: 'Mulish', sans-serif;
-}
-
 
 /* =================================
     HOME PAGE START
@@ -238,7 +236,6 @@ button {
 /* MAIN MENU END */
 
 
-
 /* BANNER START */
 .wsus__banner {
     background-size: cover !important;
@@ -327,9 +324,6 @@ button {
 }
 
 /* BANNER END */
-
-
-
 
 
 /* SERVICES START */
@@ -716,7 +710,6 @@ button {
 /* PORTFOLIO END */
 
 
-
 /* TEAM START */
 .wsus__single_team {
     width: 100%;
@@ -847,7 +840,6 @@ button {
 /* CHOOSE END */
 
 
-
 /* TESTIMONIALS START */
 .wsis__testi_img {
     width: 100%;
@@ -959,7 +951,6 @@ button {
 /* TESTIMONIALS END */
 
 
-
 /* BLOG START */
 .wsus__single_blog {
     background: #fff;
@@ -1031,7 +1022,6 @@ button {
 }
 
 /* BLOG END */
-
 
 
 /* FOOTER START */
@@ -1225,7 +1215,6 @@ footer::after {
 ================================= */
 
 
-
 /* =================================
     HOME PAGE 2 START
 ================================= */
@@ -1246,7 +1235,6 @@ footer::after {
 }
 
 /* MENU 2 END */
-
 
 
 /* BANNER 2 START */
@@ -1322,8 +1310,6 @@ footer::after {
 
 
 /* ABOUT 2 START */
-.wsus__about_2 {}
-
 .wsus__about_img_2 {
     margin-left: 25px;
 }
@@ -1357,7 +1343,6 @@ footer::after {
         -ms-transform: scale(1.05);
         -o-transform: scale(1.05);
     }
-
 }
 
 .wsus__about_img_2 .about_single_img_1 {
@@ -1491,7 +1476,6 @@ footer::after {
 /* ABOUT 2 END */
 
 
-
 /* SERVICES 2 START */
 .wsus__services_2 {
     background: #00415D;
@@ -1577,8 +1561,6 @@ footer::after {
 
 
 /* PORTFOLIO 2 START */
-.wsus__portfolio_2 {}
-
 .wsus__portfolio_2 .wsus__single_portfolio_text {
     justify-content: center;
     align-items: center;
@@ -1597,10 +1579,7 @@ footer::after {
 /* PORTFOLIO 2 END */
 
 
-
 /* WHY CHOOSE US 2 START */
-.wsus__why_choose_2 {}
-
 .wsus__choose_img_2 {
     margin-right: 50px;
 }
@@ -1628,8 +1607,6 @@ footer::after {
 .wsus__choose_text_2 {
     padding: 60px 0px 0px 0px !important;
 }
-
-.wsus__choose_text_2 ul {}
 
 .wsus__choose_text_2 ul li {
     padding: 0;
@@ -1659,7 +1636,6 @@ footer::after {
 }
 
 /* WHY CHOOSE US 2 END */
-
 
 
 /* TESTIMONIAL START */
@@ -1731,10 +1707,7 @@ footer::after {
 /* TESTIMONIAL END */
 
 
-
 /* BLOG 2 START */
-.wsus__blog_2 {}
-
 .wsus__single_blog_2 {
     border-radius: 0;
     border: 1px solid #ddd;
@@ -1800,10 +1773,7 @@ footer::after {
 /* BLOG 2 END */
 
 
-
-
 /* FOOTER 2 START */
-
 .footer_2 {
     background: #00405C;
     border-bottom: 20px solid var(--colorPrimary);
@@ -1954,7 +1924,6 @@ footer::after {
 ================================= */
 
 
-
 /* =================================
     BREADCRUMB START
 ================================= */
@@ -1969,6 +1938,7 @@ footer::after {
     color: #F6F6F6;
     font-size: 55px;
     font-weight: 800;
+    text-transform: capitalize;
     margin-bottom: 8px;
 }
 
@@ -1998,7 +1968,6 @@ footer::after {
 /* =================================
     BREADCRUMB END
 ================================= */
-
 
 
 /* =================================
@@ -2052,10 +2021,10 @@ footer::after {
     background: #f5f5f5c2;
     border-radius: 10px;
     margin-top: 35px;
-    -webkit-border-radius: 10p;
-    -moz-border-radius: 10p;
-    -ms-border-radius: 10p;
-    -o-border-radius: 10p;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .wsus_details_pagination li {
@@ -2249,8 +2218,6 @@ footer::after {
 ================================= */
 
 
-
-
 /* =================================
     PAGINATION START
 ================================= */
@@ -2287,19 +2254,9 @@ footer::after {
 ================================= */
 
 
-
 /* =================================
     PORTFOLIO DETAILS START
 ================================= */
-.wsus__portfolio_details {}
-
-
-.wsus__portfolio_det_area {}
-
-.wsus__portfolio_det_text {}
-
-.portfolio_det_text {}
-
 .portfolio_det_text ul {
     margin-top: 15px;
 }
@@ -2331,9 +2288,6 @@ footer::after {
     background: var(--colorPrimary);
     color: var(--colorWhite);
 }
-
-
-
 
 .wsus__project_info {
     background: #F2F6F7;
@@ -2523,13 +2477,6 @@ footer::after {
     color: var(--colorPrimary);
 }
 
-
-.wsus__sidebar_category {}
-
-.wsus__sidebar_category ul {}
-
-.wsus__sidebar_category ul li {}
-
 .wsus__sidebar_category ul li a {
     display: flex;
     justify-content: space-between;
@@ -2572,12 +2519,6 @@ footer::after {
     background: var(--colorWhite);
     color: var(--colorSecondary);
 }
-
-
-
-.wsus__sidebar_message {}
-
-.wsus__sidebar_message form {}
 
 .sidebar_single_input {
     position: relative;
@@ -3031,8 +2972,6 @@ footer::after {
 /* =================================
     GALLERY START
 ================================= */
-.wsus__gallery {}
-
 .wsus__gallery_item {
     width: 100%;
     height: 350px;
@@ -3113,10 +3052,6 @@ footer::after {
 /* =================================
     FAQ START
 ================================= */
-
-
-
-
 .wsus__faq_item {
     background: #F7F7FA;
     margin-top: 25px;
@@ -3170,12 +3105,9 @@ footer::after {
 ================================= */
 
 
-
 /* =================================
     404 START
 ================================= */
-.wsus__404_text {}
-
 .wsus__404_text h2 {
     font-size: 36px;
     font-weight: 700;
@@ -3379,12 +3311,9 @@ footer::after {
 ================================= */
 
 
-
 /* =================================
     FORGET PASSWORD START
 ================================= */
-.wsus__forget_password {}
-
 .wsus__forget_password .wsus__login_area {
     padding: 30px;
 }
@@ -3439,8 +3368,6 @@ footer::after {
 /* =================================
     PRICING START
 ================================= */
-.wsus__pricing {}
-
 .wsus__single_pricing {
     padding: 35px;
     background: var(--colorSecondary);
@@ -3542,7 +3469,6 @@ footer::after {
     -o-transform: scaleY(1.05);
 }
 
-
 .wsus__single_pricing:hover a {
     background: var(--colorWhite);
 }
@@ -3551,7 +3477,6 @@ footer::after {
 .wsus__single_pricing:hover .delete::after {
     color: var(--colorSecondary);
 }
-
 
 /* =================================
     PRICING END
@@ -3598,21 +3523,258 @@ footer::after {
 ================================= */
 
 
-
 /* ==============================
 	CAREER DETAILS START
 ============================== */
+.wsus__career_det_text {
+    margin-top: 25px;
+    padding: 30px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 0px 8px 0px;
+    border-radius: 10px;
+}
+
+.wsus__career_det_text h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.wsus__career_det_text P {
+    margin-top: 20px;
+}
+
+.wsus__career_det_text ul {
+    margin-top: 25px;
+}
+
+.wsus__career_det_text ul li {
+    margin-top: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.wsus__career_det_text ul li::after {
+    position: absolute;
+    content: "\f058";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--colorPrimary);
+    left: 0;
+    top: 1px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.wsus__career_det_text h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.wsus__career_det_text h5 {
+    margin-bottom: 20px;
+}
+
+.wsus__career_det_text a i {
+    margin-left: 10px;
+}
+
+.wsus__career_form_area .modal {
+    z-index: 9999;
+}
+
+.wsus__career_form_single label {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0A547A;
+}
+
+.wsus__career_form_area h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.wsus__career_form_single {
+    margin-bottom: 20px;
+}
+
+.wsus__career_form_area .btn-close {
+    border: 1px solid var(--colorPrimary);
+}
+
+.wsus__career_form_area .btn-close:focus {
+    box-shadow: none;
+}
 
 /* ==============================
 	CAREER DETAILS END
 ============================== */
 
 
-
-
 /* =================================
-    START
+    CONTACT START
 ================================= */
+.wsus__contact_info {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 130px 0px 300px 0px;
+}
+
+.contact_address {
+    box-shadow: rgb(17 12 46 / 7%) 0px 10px 100px 0px;
+    background: var(--colorWhite);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact_address h3,
+.wsus__contact_form h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.contact_address ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0DFDF;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_address ul li .icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: var(--colorPrimary);
+    text-align: center;
+    line-height: 80px;
+    color: var(--colorWhite);
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.contact_address ul li .text {
+    width: 75%;
+}
+
+.contact_address ul li .text h5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.contact_address ul li .text p {
+    color: #666;
+}
+
+.contact_address h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--colorPrimary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.contact_address h6 span {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--colorPrimary);
+    margin-right: 10px;
+}
+
+.wsus__contact_map {
+    box-shadow: rgb(17 12 46 / 7%) 0px 10px 100px 0px;
+    background: var(--colorWhite);
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wsus__contact_map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wsus__contact_form {
+    box-shadow: rgb(17 12 46 / 10%) 0px 10px 100px 0px;
+    background: var(--colorWhite);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: -250px;
+    border: 1px solid #eee;
+}
+
+.wsus__contact_input {
+    margin-bottom: 20px;
+}
+
+.wsus__contact_input label {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.wsus__contact_input input,
+.wsus__contact_input textarea {
+    background: #F7F7FA;
+    border: 1px solid #F7F7FA;
+}
+
+.wsus__contact_input input:focus,
+.wsus__contact_input textarea:focus {
+    border-color: var(--colorPrimary);
+    color: var(--colorPrimary);
+}
+
 /* =================================
-    END
+    CONTACT END
+================================= */
+
+
+/* =================================
+    TERMS AND CONDITION START
+================================= */
+
+.wsus__terms_condition .wsus__career_det_text P {
+    margin-bottom: 20px;
+}
+
+.wsus__terms_condition h3 {
+    font-size: 20px;
+}
+
+.wsus__terms_condition ul li {
+    color: #757474;
+    font-weight: 300;
+}
+
+.wsus__terms_condition ul li::after {
+    content: "\f30b" !important;
+}
+
+/* =================================
+    TERMS AND CONDITION END
 ================================= */
