@@ -2305,6 +2305,7 @@ footer::after {
     font-size: 16px;
     font-weight: 700;
     color: var(--colorSecondary);
+    margin-right: 10px;
 }
 
 .wsus__project_info ul li a {
@@ -2527,7 +2528,7 @@ footer::after {
 
 .sidebar_single_input i {
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 20px;
     color: var(--colorPrimary);
 }
@@ -2641,6 +2642,7 @@ footer::after {
     padding-left: 50px;
     position: relative;
     text-transform: capitalize;
+    margin-bottom: 0;
 }
 
 .wsus__blog_quot_text h6::after {
@@ -2759,6 +2761,10 @@ footer::after {
 .wsus__blog_quot_text_2 {
     position: relative;
     padding-left: 140px;
+}
+
+.wsus__blog_quot_text_2::after {
+    display: none;
 }
 
 .wsus__blog_quot_text_2 h4 span {
