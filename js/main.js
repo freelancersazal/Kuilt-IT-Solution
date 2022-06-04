@@ -50,12 +50,27 @@ $(function () {
     $('.test_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: false,
         arrows: true,
         nextArrow: '<i class="fad fa-arrow-alt-right nextArrow"></i>',
         prevArrow: '<i class="fad fa-arrow-alt-left prevArrow"></i>',
+
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //             slidesToShow: 1,
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 576,
+        //         settings: {
+        //             arrows: false,
+        //         }
+        //     }
+        // ]
     });
 
 
