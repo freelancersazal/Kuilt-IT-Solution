@@ -256,7 +256,7 @@
 }
 
 .blog_list_head_tag li i {
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-left: 5px;
 }
 
@@ -443,7 +443,7 @@
 
 .wsus__service_det_text ul li {
     padding-left: 0;
-    padding-right: 25px;
+    padding-right: 45px;
 }
 
 .wsus_details_pagination li a p i {
@@ -524,6 +524,45 @@
     margin-left: 5px;
 }
 
+.main_menu .navbar-nav .nav-item .nav-link {
+    text-align: center;
+}
+
+.wsus__banner_footer li {
+    border-right: 0;
+    border-left: 1px dashed var(--colorPrimary);
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.wsus__video_item::after {
+    top: 15px;
+    left: auto;
+    right: 15px;
+}
+
+.wsus__comment_input .form-check label {
+    margin-left: 0;
+    margin-right: 35px;
+}
+
+.wsus__comment_input .form-check .form-check-input:checked[type=checkbox] {
+    transform: rotateY(180deg);
+}
+
+.wsus__faq_item .accordion-button {
+    text-align: right;
+}
+
+.wsus__banner_text .banner_tag li {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.wsus__banner_text .banner_tag li::after {
+    right: auto;
+    left: 15px;
+}
 
 
 
@@ -540,31 +579,204 @@
 
 
 
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+    .wsus__about_img .img_3 {
+        right: 0;
+    }
+
+    .wsus__about_img_2 .about_single_img_2 {
+        left: 20px;
+        right: auto;
+    }
+
+    .wsus__sidebar_blog ul li a .text {
+        width: 67%;
+    }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .wsus__about_img .img_3 {
+        right: 0;
+    }
+
+    .wsus__about_img {
+        margin-right: 0;
+    }
+
+    .wsus__about_img .img_2 {
+        right: 20%;
+    }
+
+    .wsus__about_img_2 .about_single_img_2 {
+        left: 20px;
+        right: auto;
+    }
+
+    .wsus__sidebar_blog ul li a .text {
+        width: 62%;
+    }
+
+    .wsus__project_info ul li a {
+        margin: 15px 0px 0px 10px;
+    }
 
 
 
+}
+
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .wsus__about_img .img_3 {
+        right: 0;
+    }
+
+    .wsis__testi_img::after {
+        left: 15px;
+    }
+
+    .wsus__single_counter {
+        border: none;
+    }
+
+    .wsis__testi_text {
+        padding-right: 0;
+    }
+
+    .wsu__copyright ul li a {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .wsus__scroll_btn {
+        left: 5px;
+    }
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .wsus__about_img .img_3 {
+        right: 0;
+    }
+
+    .wsis__testi_img::after {
+        left: 0;
+    }
+
+    .wsus__single_counter {
+        border: none;
+    }
+
+    .wsis__testi_text {
+        padding-right: 0;
+    }
+
+    .wsus__banner_footer li {
+        border: none;
+    }
+
+    .wsu__copyright ul li a {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .wsus__scroll_btn {
+        left: 5px;
+    }
 
 
 
+}
+
+
+@media (max-width: 575.99px) {
 
 
 
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+        text-align: center;
+    }
 
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
 
+    .wsus__about_img .img_3 {
+        right: 0;
+    }
 
+    .wsis__testi_img::after {
+        left: 0;
+    }
 
+    .wsus__banner_footer li {
+        border: none;
+    }
 
+    .wsus__about_img_2 .about_single_img_2 {
+        left: 0;
+        right: auto;
+    }
 
-@media (min-width: 1200px) and (max-width: 1399.99px) {}
+    .wsus__about_text_2 ul li {
+        padding-left: 0px !important;
+    }
 
+    .wsus__video_item::after {
+        right: 0;
+    }
 
-@media (min-width: 992px) and (max-width: 1199.99px) {}
+    .wsus__blog_det_share .links a {
+        margin-right: 0;
+        margin-left: 10px;
 
+    }
 
-@media (min-width: 768px) and (max-width: 991.99px) {}
+    .wsus__sidebar_blog ul li a .text {
+        width: 60%;
+    }
 
+    .wsus__faq_item .accordion-button {
+        font-size: 15px;
+    }
 
-@media (min-width: 576px) and (max-width: 767.99px) {}
+    .wsus__project_info ul li a {
+        margin: 10px 0px 0px 10px;
+    }
 
+    .wsus__footer_support_button .volunteer_btn {
+        margin-right: 25px;
+    }
 
-@media (max-width: 575.99px) {}
+}
