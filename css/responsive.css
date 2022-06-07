@@ -37,10 +37,10 @@
         bottom: 60px;
     }
 
-
-
+    .wsus__pay_item ul li {
+        width: 30.3%;
+    }
 }
-
 
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
@@ -179,10 +179,10 @@
         top: 22.5%;
     }
 
-
-
+    .wsus__pay_item ul li {
+        width: 30.26%;
+    }
 }
-
 
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -381,10 +381,6 @@
 
     /* home page end */
 
-
-
-
-
     .wsus__breadcrumb {
         padding: 142px 0px 50px 0px;
     }
@@ -533,11 +529,18 @@
 
     /* home page 2 end */
 
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
 
+    .wsus__pay_item {
+        margin-bottom: 25px;
+    }
+
+    .wsus__pay_item ul li {
+        width: 30.26%;
+    }
 }
-
-
-
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -672,7 +675,6 @@
         padding: 60px 0px 0px 0px;
     }
 
-
     .wsis__testi_img::after {
         top: 0;
         right: 0;
@@ -740,8 +742,6 @@
 
     /* home page end */
 
-
-
     /* 404 start */
     .wsus__breadcrumb {
         padding: 142px 0px 50px 0px;
@@ -752,8 +752,6 @@
     }
 
     /* 404 end */
-
-
 
     /* blog details start */
     .wsus__blog_det_text h2 {
@@ -864,9 +862,6 @@
         font-size: 16px;
     }
 
-
-
-
     .wsus__service_det_text h2 {
         font-size: 20px;
     }
@@ -964,11 +959,19 @@
 
     /* home page 2 end */
 
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
 
+    .wsus__pay_item ul li {
+        width: 44%;
+        margin: 10px !important;
+    }
+
+    .wsus__pay_item {
+        margin-bottom: 25px;
+    }
 }
-
-
-
 
 
 @media (max-width: 575.99px) {
@@ -978,7 +981,6 @@
         top: 0;
         height: 60px;
         background: var(--colorSecondary);
-        ;
     }
 
     .main_menu .navbar-brand {
@@ -1163,9 +1165,6 @@
 
     /* home page end */
 
-
-
-
     /* 404 start */
     .wsus__breadcrumb {
         padding: 142px 0px 50px 0px;
@@ -1186,7 +1185,6 @@
     /* 404 end */
 
 
-
     /* about start */
     .wsus__about_img_2 {
         margin-left: 0;
@@ -1198,8 +1196,6 @@
     }
 
     /* about end */
-
-
 
     /* blog details start */
     .wsus__blog_det_text h2 {
@@ -1256,7 +1252,6 @@
     }
 
     /* blog details end */
-
 
 
     /* blog list view start */
@@ -1316,8 +1311,6 @@
         height: 250px;
     }
 
-
-
     .wsus__service_det_img,
     .wsus__portfolio_det_img,
     .wsis__blog_det_img {
@@ -1332,9 +1325,6 @@
     .wsus__single_portfolio_text h3 {
         font-size: 16px;
     }
-
-
-
 
     .wsus__service_det_text h2 {
         font-size: 20px;
@@ -1361,17 +1351,6 @@
     .wsus__choose_single {
         padding: 10px 25px 0px 25px;
     }
-
-
-
-
-
-
-
-
-
-
-
 
     /* home page 2 start */
     .main_menu_2.menu_fix {
@@ -1480,6 +1459,21 @@
 
     /* home page 2 end */
 
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
 
 
+    .wsus__pay_item ul li {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .wsus__pay_item {
+        margin-bottom: 25px;
+    }
+
+    .wsus__shop_text .title {
+        font-size: 16px;
+    }
 }

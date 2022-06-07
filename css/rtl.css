@@ -564,19 +564,61 @@
     left: 15px;
 }
 
+.wsus__chechout_item ul li .wsus__chechout_item_text {
+    padding-left: 0;
+    padding-right: 20px;
+}
 
+.wsus__checkout_form .form-check input {
+    float: right;
+}
 
+.wsus__checkout_form .form-check label,
+.wsus__login_form .form-check label {
+    margin-right: 25px;
+}
 
+.wsus__checkout_form .form-check-input:checked[type=checkbox] {
+    transform: rotateY(180deg);
+}
 
+.wsus__checkout_form a span {
+    transform: rotateY(180deg);
+}
 
+.wsus__pay_item ul li {
+    margin-right: 0;
+    margin-left: 25px;
+}
 
+.wsus__pay_item ul li:nth-child(3),
+.wsus__pay_item ul li:nth-child(6),
+.wsus__pay_item ul li:nth-child(9),
+.wsus__pay_item ul li:nth-child(12) {
+    margin-right: auto;
+    margin-left: 0;
+}
 
+.wsus__shop_text p span {
+    margin-left: 0;
+    margin-right: 5px;
+}
 
+.wsus__shop_det_share ul li a {
+    margin-left: 0;
+    margin-right: 10px;
+}
 
+.wsus__shop_det_single ul li {
+    padding-left: 0;
+    padding-right: 25px;
+}
 
-
-
-
+.wsus__shop_det_single ul li::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+}
 
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
@@ -592,8 +634,6 @@
     .wsus__sidebar_blog ul li a .text {
         width: 67%;
     }
-
-
 }
 
 
@@ -622,9 +662,6 @@
     .wsus__project_info ul li a {
         margin: 15px 0px 0px 10px;
     }
-
-
-
 }
 
 
@@ -665,13 +702,10 @@
     .wsus__scroll_btn {
         left: 5px;
     }
-
-
 }
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
-
     .navbar-toggler {
         margin-right: 0;
         margin-left: 10px;
@@ -712,15 +746,17 @@
         left: 5px;
     }
 
+    .wsus__shop_det_header_area h2 {
+        font-size: 25px;
+    }
 
-
+    .wsus__shop_det_area {
+        margin-bottom: 25px;
+    }
 }
 
 
 @media (max-width: 575.99px) {
-
-
-
     .navbar-toggler {
         margin-right: 0;
         margin-left: 10px;
@@ -760,7 +796,6 @@
     .wsus__blog_det_share .links a {
         margin-right: 0;
         margin-left: 10px;
-
     }
 
     .wsus__sidebar_blog ul li a .text {
@@ -779,4 +814,28 @@
         margin-right: 25px;
     }
 
+    .wsus__pay_item ul li {
+        margin-left: 0;
+    }
+
+    .wsus__shop_det_header_area h2 {
+        font-size: 25px;
+    }
+
+    .wsus__shop_det_share ul li a {
+        margin-left: 7px;
+        margin-right: 0;
+    }
+
+    .wsus__shop_det_share span {
+        margin: 10px 0px;
+    }
+
+    .wsus__shop_det_single ul li {
+        width: 100%;
+    }
+
+    .wsus__shop_det_area {
+        margin-bottom: 25px;
+    }
 }
