@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 
 * {
     margin: 0;
@@ -27,11 +30,11 @@ span {
     font-size: 16px;
     font-weight: 300;
     margin: 0;
-    color: #757474;
+    color: #484848;
 }
 
 body {
-    font-family: var(--Mulish);
+    font-family: var(--HeadingFont);
     color: var(--colorSecondary);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -72,7 +75,8 @@ button {
     --colorPrimary: #F94D1D;
     --colorSecondary: #161735;
     --colorWhite: #ffffff;
-    --Mulish: 'Mulish', sans-serif;
+    /* --HeadingFont: 'Mulish', sans-serif; */
+    --HeadingFont: 'Roboto', sans-serif;
 }
 
 /* ========COMMON CSS START========= */
@@ -111,6 +115,8 @@ button {
 }
 
 /* ========COMMON CSS END========== */
+
+
 
 /* =================================
     HOME PAGE START
@@ -185,7 +191,7 @@ button {
 .wsus__droap_menu {
     width: 250px;
     position: absolute;
-    background: var(--colorPrimary);
+    background: var(--colorWhite);
     top: 120%;
     left: 0;
     opacity: 0;
@@ -194,6 +200,7 @@ button {
     overflow-y: auto;
     scrollbar-width: thin;
     z-index: 1;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 14px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -211,11 +218,10 @@ button {
 
 .wsus__droap_menu::-webkit-scrollbar-thumb {
     background: var(--colorSecondary);
-    border-radius: 30px;
 }
 
 .wsus__droap_menu li a {
-    color: #fff;
+    color: var(--colorSecondary);
     transition: all linear .3s;
     -webkit-transition: all linear .3s ease;
     -moz-transition: all linear .3s ease;
@@ -224,12 +230,13 @@ button {
     display: block;
     text-transform: capitalize;
     padding: 13px 20px;
-    border-bottom: 1px dashed #ffffff42;
+    border-bottom: 1px solid #16173524;
 }
 
 .wsus__droap_menu li a:hover,
 .wsus__droap_menu li a.active {
-    color: var(--colorSecondary) !important;
+    color: var(--colorWhite) !important;
+    background: #00415D;
 }
 
 .wsus__droap_menu li:last-child a {
@@ -661,42 +668,39 @@ button {
 
 .wsus__single_portfolio:hover .wsus__single_portfolio_text {
     opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+    top: 0;
+    right: 0;
 }
 
 .wsus__single_portfolio_text {
     position: absolute;
-    background: #16173570;
+    background: #161735b5;
     width: 100%;
     height: 100%;
-    top: 0%;
-    left: 0;
+    top: -50%;
+    right: -50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 50px;
-    transform: scale(.6);
+    padding: 0px 30px;
     opacity: 0;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s ease;
-    -moz-transition: all linear .3s ease;
-    -ms-transition: all linear .3s ease;
-    -o-transition: all linear .3s ease;
-    -webkit-transform: scale(.6);
-    -moz-transform: scale(.6);
-    -ms-transform: scale(.6);
-    -o-transform: scale(.6);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    align-items: start;
+    overflow: hidden;
 }
 
 .wsus__single_portfolio_text h5 {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 700 !important;
     color: var(--colorWhite);
-    opacity: .6;
+    background: var(--colorPrimary);
+    padding: 8px 20px;
+    border-radius: 320px;
+    text-align: center;
 }
 
 .wsus__single_portfolio_text h3 {
@@ -906,7 +910,7 @@ button {
 }
 
 .wsis__testi_text p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 45px 0px;
 }
 
@@ -1242,7 +1246,7 @@ footer::after {
 ================================= */
 
 /* MENU 2 START */
-.main_menu_2 {
+/* .main_menu_2 {
     background: #00415D !important;
     height: 90px;
     top: 0;
@@ -1259,7 +1263,15 @@ footer::after {
 
 .main_menu_2.menu_fix .navbar-nav .nav-item:hover .wsus__droap_menu {
     top: 90%;
-}
+} */
+
+
+
+/* .home_2 .main_menu ul li a:hover {
+    color: var(--colorWhite);
+} */
+
+
 
 /* MENU 2 END */
 
@@ -1269,8 +1281,13 @@ footer::after {
     padding: 0 !important;
 }
 
-.wsus__banner_overlay {
+/* .wsus__banner_overlay {
     background: #00415D80;
+    padding: 250px 0px 190px 0px;
+} */
+
+.wsus__banner_overlay {
+    background: #0009;
     padding: 250px 0px 190px 0px;
 }
 
@@ -1470,7 +1487,7 @@ footer::after {
 
 .wsus__about_text_2 h5 {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
     color: var(--colorPrimary);
     margin-bottom: 5px;
 }
@@ -1505,7 +1522,13 @@ footer::after {
 
 /* SERVICES 2 START */
 .wsus__services_2 {
-    background: #00415D;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.wsus__services_overlay {
+    background: #00415dd9;
 }
 
 .wsus__services_2 .wsus__section_heading h2,
@@ -1516,19 +1539,19 @@ footer::after {
 }
 
 .wsus__single_services_2 {
-    padding: 30px;
+    padding: 50px 30px;
     width: 100%;
     background: #fff;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 25px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    margin-top: 25px;
 }
 
 .wsus__single_services_2 span {
@@ -1658,7 +1681,6 @@ footer::after {
 }
 
 .wsus__choose_text_2 p {
-    color: #899AA2;
     margin: 35px 0px 35px 0px;
 }
 
@@ -1667,7 +1689,13 @@ footer::after {
 
 /* TESTIMONIAL START */
 .wsus__testimonial_2 {
-    background: #00415D;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.wsus__testimonial_2_overlay {
+    background: #00415dd9;
 }
 
 .wsus__single_testimonial_2 {
@@ -1708,7 +1736,7 @@ footer::after {
 
 .wsus__testimonial_header h3 span {
     display: block;
-    color: #899AA2;
+    /*! color: #899AA2; */
     margin-top: 8px;
 }
 
@@ -1724,11 +1752,10 @@ footer::after {
     height: 5px;
     background: var(--colorPrimary);
     margin: 0px 5px;
-    opacity: .5;
 }
 
 .test_slider_2 .slick-dots li.slick-active button {
-    opacity: 1;
+    background: var(--colorWhite);
 }
 
 /* TESTIMONIAL END */
@@ -1751,7 +1778,7 @@ footer::after {
 
 .wsus__single_blog_2 .wsus__blog_text p {
     margin: 15px 0px 0px 0px;
-    color: #545F6C;
+    /* color: #545F6C; */
 }
 
 .wsus__blog_header {
@@ -2029,17 +2056,23 @@ footer::after {
     height: 450px;
 }
 
-.wsus__service_det_text h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 35px;
+.wsus__service_det_text h1,
+.wsus__service_det_text h2,
+.wsus__service_det_text h3,
+.wsus__service_det_text h4,
+.wsus__service_det_text h5,
+.wsus__service_det_text h6 {
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
 .wsus__service_det_text p {
-    margin-top: 15px;
-    color: var(--colorSecondary);
+    margin-top: 25px;
     font-weight: 400;
+}
+
+.wsus__service_det_text ul {
+    margin-top: 25px;
 }
 
 .wsus__service_det_text ul li {
@@ -2048,10 +2081,11 @@ footer::after {
     padding-left: 25px;
     margin-top: 12px;
     position: relative;
+    color: #484848;
 }
 
 .wsus__service_det_text ul li::after {
-    content: "\f00c" !important;
+    content: "\f00c";
     color: var(--colorPrimary);
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -2270,6 +2304,14 @@ footer::after {
 /* =================================
     PAGINATION START
 ================================= */
+.wsus__pagination ul li {
+    padding-left: 0 !important;
+}
+
+.wsus__pagination ul li::after {
+    display: none !important;
+}
+
 .wsus__pagination ul li a {
     width: 50px;
     height: 50px;
@@ -2306,10 +2348,6 @@ footer::after {
 /* =================================
     PORTFOLIO DETAILS START
 ================================= */
-.portfolio_det_text ul {
-    margin-top: 15px;
-}
-
 .portfolio_det_text ul li {
     margin: 0;
     padding: 10px 0px 10px 45px;
@@ -2405,25 +2443,23 @@ footer::after {
 }
 
 .blog_list_head_tag li {
-    font-size: 14px;
+    font-size: 14px !important;
     margin-right: 20px;
-    position: relative;
+    position: relative !important;
     text-transform: capitalize;
+    padding-left: 0 !important;
 }
 
 .blog_list_head_tag li::after {
-    position: absolute;
-    content: "";
+    position: absolute !important;
+    content: "" !important;
     background: #ddd;
     width: 2px;
     height: 60%;
-    top: 50%;
+    top: 50% !important;
+    left: auto !important;
     right: -10px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    transform: translateY(-50%) !important;
 }
 
 .blog_list_head_tag li:last-child::after {
@@ -2514,7 +2550,7 @@ footer::after {
 .wsus__sidebar_blog ul li a .text p {
     text-transform: capitalize;
     font-size: 14px;
-    color: #C4C4C4;
+    color: #484848;
 }
 
 .wsus__sidebar_blog ul li a .text p i {
@@ -2656,10 +2692,6 @@ footer::after {
     margin-top: 20px;
 }
 
-.wsus__blog_det_text p {
-    margin-top: 30px;
-}
-
 .wsus__blog_quot_text {
     background: var(--colorPrimary);
     padding: 50px;
@@ -2714,12 +2746,6 @@ footer::after {
     z-index: 1;
 }
 
-.wsus__blog_det_text h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 30px;
-}
-
 .wsus__blog_det_video_img {
     height: 350px;
     position: relative;
@@ -2762,7 +2788,7 @@ footer::after {
 
 .wsus__blog_det_video_text ul li,
 .details_list li {
-    padding-left: 45px;
+    padding-left: 45px !important;
     margin: 15px 0px;
     font-size: 14px;
     font-weight: 300;
@@ -2804,11 +2830,11 @@ footer::after {
 }
 
 .details_list li::after {
-    content: "\f058";
-    font-size: 20px;
-    top: -3px;
+    content: "\f058" !important;
+    font-size: 20px !important;
+    top: -3px !important;
     background: none;
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .wsus__blog_quot_text_2 {
@@ -2838,6 +2864,14 @@ footer::after {
     color: var(--colorWhite);
 }
 
+.wsus__blog_quot_text_2 ul li {
+    padding-left: 0 !important;
+}
+
+.wsus__blog_quot_text_2 ul li::after {
+    display: none;
+}
+
 .wsus__blog_quot_text_2 ul li i {
     color: var(--colorWhite);
     margin-right: 5px;
@@ -2848,7 +2882,12 @@ footer::after {
 }
 
 .wsus__blog_det_share li {
-    margin-top: 0;
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+}
+
+.wsus__blog_det_share li::after {
+    display: none;
 }
 
 .wsus__blog_det_share .tags a {
@@ -2931,6 +2970,9 @@ footer::after {
 .wsus__single_comment_text h6 {
     font-size: 16px;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
 .wsus__single_comment_text h6 a {
@@ -3144,7 +3186,6 @@ footer::after {
 
 .wsus__faq_item .accordion-body p {
     font-weight: 400;
-    color: #7A7A7A;
 }
 
 .wsus__faq_item .accordion-button:not(.collapsed)::after {
@@ -3401,7 +3442,7 @@ footer::after {
 }
 
 .wsus__forget_password p {
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 10px;
 }
 
@@ -3612,6 +3653,8 @@ footer::after {
     margin-top: 15px;
     padding-left: 25px;
     position: relative;
+    color: #484848;
+    font-weight: 300;
 }
 
 .wsus__career_det_text ul li::after {
@@ -3736,10 +3779,6 @@ footer::after {
     color: #333;
 }
 
-.contact_address ul li .text p {
-    color: #666;
-}
-
 .contact_address h6 {
     font-size: 20px;
     font-weight: 700;
@@ -3840,13 +3879,9 @@ footer::after {
 ================================= */
 
 
-
-
 /* =================================
     SHOP START
 ================================= */
-.wsus__shop {}
-
 .wsus__shop_item {
     margin-top: 25px;
     background: #fff;
@@ -3859,8 +3894,6 @@ footer::after {
     height: 250px;
     overflow: hidden;
 }
-
-.wsus__shop_img img {}
 
 .wsus__shop_text {
     padding: 20px;
@@ -3971,7 +4004,6 @@ footer::after {
 ================================= */
 
 
-
 /* ==============================
 	SHOP DETAILS START
 ============================== */
@@ -4005,7 +4037,6 @@ footer::after {
 .wsus__shop_det_header_area h2 {
     font-size: 30px;
     font-weight: 600;
-    text-transform: capitalize;
 }
 
 .wsus__shop_det_header {
@@ -4089,7 +4120,7 @@ footer::after {
 }
 
 .wsus__shop_det_single ul li {
-    color: var(--colorSecondary);
+    color: #484848;
     text-transform: capitalize;
     font-size: 16px;
     position: relative;
@@ -4097,6 +4128,7 @@ footer::after {
     margin-bottom: 5px;
     width: 50%;
     float: left;
+    font-weight: 300;
 }
 
 .wsus__shop_det_single ul li::after {
@@ -4180,7 +4212,6 @@ footer::after {
 ============================== */
 
 
-
 /* =================================
     CHECKOUT START
 ================================= */
@@ -4191,7 +4222,6 @@ footer::after {
     overflow: hidden;
     box-shadow: rgb(99 99 99 / 20%) 0px 0px 8px 0px;
 }
-
 
 .wsus__checkout_form h2 {
     text-transform: capitalize;
@@ -4394,16 +4424,6 @@ footer::after {
 ================================= */
 
 
-
-
-
-
-
-
-
-
-
-
 /* ==============================
 	PAYMENT  START
 ============================== */
@@ -4445,7 +4465,6 @@ footer::after {
 
 .wsus__pay_item ul li a h3 {
     color: #0A547A;
-    text-transform: capitalize;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -4453,7 +4472,6 @@ footer::after {
 }
 
 .wsus__payment_modal .modal-header h5 {
-    text-transform: capitalize;
     font-size: 18px;
     width: 100%;
     font-weight: 600;
@@ -4469,7 +4487,7 @@ footer::after {
     font-size: 16px;
     border-radius: 5px;
     resize: none;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .wsus__payment_modal .modal-footer {
@@ -4544,7 +4562,7 @@ footer::after {
 }
 
 .wsus__chechout_item ul {
-    max-height: 295px;
+    max-height: 450px;
     overflow-y: auto;
 }
 
@@ -4627,22 +4645,6 @@ footer::after {
     outline: none;
 }
 
-
-
-
 /* ==============================
 	PAYMENT  END
 ============================== */
-
-
-
-
-
-
-
-/* =================================
-    SHOP DETAILS START
-================================= */
-/* =================================
-    SHOP DETAILS END
-================================= */
